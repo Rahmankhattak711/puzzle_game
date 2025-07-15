@@ -1,11 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Puzzle Game</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Puzzle Game</title>
+  </head>
+  <body>
+    <div>
+      <h1>Puzzle Game</h1>
+
+      <!-- multiple board size select -->
+      <div class="firstContainer">
+        <form class="form">
+          <div class="formContainer">
+            <label for="selectSized" style="color: #cacaca"
+              >Select Complexity:</label
+            >
+            <select class="selectSized" id="selectSized" name="selectSized">
+              <option value="3">Easy</option>
+              <option value="4">Medium</option>
+              <option value="5">Hard</option>
+            </select>
+          </div>
+
+          <!-- select image -->
+          <div class="selectImageDev">
+            <label for="images" style="color: white">Select Images:</label>
+            <div class="selectImg" id="images">
+              <img
+                name="images"
+                src="./asset/viewblackpanthernature.jpg"
+                alt="viewblackpanthernature"
+              />
+              <img name="images" src="./asset/cat.jpg" alt="cat image" />
+              <img name="images" src="./asset/cat1.jpg" alt="cat1 image" />
+              <img
+                name="images"
+                src="./asset/robottiger.jpg"
+                alt="robottiger image"
+              />
+              <img name="images" src="./asset/car1.jpg" alt="car1 image" />
+              <img name="images" src="./asset/car2.jpg" alt="car2 image" />
+            </div>
+          </div>
+
+          <button type="submit">Start Game</button>
+        </form>
+      </div>
+
+      <!-- board -->
+      <div class="lastContainer">
+        <div class="container">
+          <div id="board" class="board"></div>
+          <div id="displaySelectedImage" class="displaySelectedImage"></div>
+          <h1 class="WinnerDisplay" id="WinnerDisplay"></h1>
+        </div>
+      </div>
+    </div>
+
+    <audio
+      controls
+      hidden
+      style="display: none"
+      src="./asset/audio/clicksound.mp3"
+      id="audio"
+    ></audio>
+
+    <span style="display: none" class="backbtn"
+      ><a href="./index.html">Back</a></span
+    >
+
+    <script type="module" defer src="./scripts/script.js"></script>
+    <script type="module" defer src="./scripts/games.js"></script>
+  </body>
 </html>

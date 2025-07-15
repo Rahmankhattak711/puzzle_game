@@ -1,4 +1,4 @@
-import { MoveTile } from "../scripts/games.js";
+import { MoveTile } from "./game.js";
 
 const board = document.getElementById("board");
 const allTiles = board.getElementsByTagName("div");

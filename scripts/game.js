@@ -1,4 +1,5 @@
-import { CreateBoard } from "../scripts/script.js";
+import { CreateBoard } from "./script.js";
+
 let isMoving = false;
 
 export function MoveTile(clickedIndex, allTiles, boardSize, tiles, audio) {

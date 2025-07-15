@@ -12,7 +12,7 @@ A fun and interactive puzzle game built with **HTML, CSS, and JavaScript**. Chal
 
 ## 🚀 Getting Started
 
-You don’t need any special setup. Just clone the repository and open the game in your browser.
+You don’t need any special setup. Just clone the repository and open in code editor install the live_server extension.
 
 ### 📥 Clone the Repository
 

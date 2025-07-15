@@ -6,7 +6,7 @@ A fun and interactive puzzle game built with **HTML, CSS, and JavaScript**. Chal
 
 - 🧠 Drag-and-drop puzzle mechanics
 - 🔥 Multiple levels with increasing difficulty
-- 🎵 Sound effects (optional)
+- 🎵 Sound effect
 
 ---
 

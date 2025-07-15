@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background: #363738;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.lastContainer {
+  display: none;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 40px;
+  color: #cacaca;
+}
+
+#board {
+  display: grid;
+  justify-content: center;
+  gap: 2px;
+  position: relative;
+  background-color: #565758;
+  height: auto;
+  border-radius: 5px;
+  width: auto;
+  padding: 4px;
+}
+
+.empty,
+.tile {
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  box-sizing: border-box;
+}
+
+.empty {
+  background-color: #ffffff;
+}
+
+.tile {
+  background-color: #3498db;
+  color: #fff;
+  transition: transform 0.2s ease-in-out;
+}
+
+.selectSized {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+}
+
+.displaySelectedImage {
+  width: 300px;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.firstContainer {
+  display: block;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 10px;
+  width: 600px;
+  height: 300px;
+  border-radius: 10px;
+  margin: auto;
+  background-color: #565758;
+}
+
+.formContainer {
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.selectImageDev {
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.selectSized {
+  padding: 6px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  width: 500px;
+}
+
+.selectImage {
+  padding: 6px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  width: 500px;
+}
+
+.selectImageDev {
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.selectImg {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-items: center;
+}
+
+.selectImg img {
+  cursor: pointer;
+  width: 73px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+button {
+  padding: 6px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  width: 500px;
+  cursor: pointer;
+}
+
+.backbtn {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  cursor: pointer;
+  color: #cacaca;
+  background-color: #565758;
+  text-decoration: none;
+  padding: 6px;
+  border-radius: 5px;
+  width: 50px;
+}
+
+.backbtn a {
+  text-decoration: none;
+  color: #cacaca;
+}
+
+.selected {
+  overflow: hidden;
+  padding: 4px;
+  box-sizing: border-box;
+  background-color: #3498db;
+}
